@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="Interpolacion y Ajuste(interface and controller)">
+    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="Euler I(interface and controller)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ED_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ED_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/main_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/main_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/ec_diferenciales/euler_ED_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ec_diferenciales/euler_ED_w.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/ec_diferenciales/runge_kutta4_ED_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ec_diferenciales/runge_kutta4_ED_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ec_diferenciales_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ec_diferenciales_w.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718369455290</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Euler I(interface and controller)">
+      <option name="closed" value="true" />
+      <created>1718373340531</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718373340531</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -174,6 +179,7 @@
     <MESSAGE value="FalsaPos(interface and controller)" />
     <MESSAGE value="Newton y Secante(interface and controller)" />
     <MESSAGE value="Interpolacion y Ajuste(interface and controller)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interpolacion y Ajuste(interface and controller)" />
+    <MESSAGE value="Euler I(interface and controller)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Euler I(interface and controller)" />
   </component>
 </project>

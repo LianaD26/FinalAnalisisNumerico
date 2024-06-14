@@ -40,6 +40,27 @@ class IEuler:
         self.ecuaciones_frame = tk.Frame(self.root)
         self.ecuaciones_frame.pack(pady=10)
 
+        # Frame for results with scrollbar
+        self.result_frame = tk.Frame(self.root)
+        self.result_frame.pack(pady=10)
+
+        self.canvas = tk.Canvas(self.result_frame)
+        self.scrollbar = tk.Scrollbar(self.result_frame, orient="vertical", command=self.canvas.yview)
+        self.scrollable_frame = tk.Frame(self.canvas)
+
+        self.scrollable_frame.bind(
+            "<Configure>",
+            lambda e: self.canvas.configure(
+                scrollregion=self.canvas.bbox("all")
+            )
+        )
+
+        self.canvas.create_window((0, 0), window=self.scrollable_frame, anchor="nw")
+        self.canvas.configure(yscrollcommand=self.scrollbar.set)
+
+        self.canvas.pack(side="left", fill="both", expand=True)
+        self.scrollbar.pack(side="right", fill="y")
+
         self.root.mainloop()
 
     def mostrar_ecuaciones(self):
@@ -118,5 +139,23 @@ class IEuler:
             print(t_values)
             print(yeu)
 
+            self.mostrar_resultados(t_values, yeu)
+
         except Exception as e:
             messagebox.showerror("Error", str(e))
+
+    def mostrar_resultados(self, t_values, yeu):
+        for widget in self.scrollable_frame.winfo_children():
+            widget.destroy()
+
+        # Column headers
+        label_t = tk.Label(self.scrollable_frame, text="Valores de t:")
+        label_t.grid(row=0, column=0, padx=5, pady=5)
+
+        label_y = tk.Label(self.scrollable_frame, text="Valores de yeu:")
+        label_y.grid(row=0, column=1, padx=5, pady=5)
+
+        # Populate data
+        for i, (t, y) in enumerate(zip(t_values, yeu), start=1):
+            tk.Label(self.scrollable_frame, text=str(t)).grid(row=i, column=0, padx=5, pady=5)
+            tk.Label(self.scrollable_frame, text=str(y)).grid(row=i, column=1, padx=5, pady=5)
