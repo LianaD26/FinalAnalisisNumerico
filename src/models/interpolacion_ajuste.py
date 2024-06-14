@@ -51,8 +51,8 @@ class InterpolacionAjuste:
         n = len(xd)
         sx = sum(xd)
         sf = sum(yd)
-        sx2 = sum(xd ** 2)
-        sfx = sum(xd * yd)
+        sx2 = sum(x ** 2 for x in xd)
+        sfx = sum(xd[i]*yd[i] for i in range(len(xd)))
         a0 = (sf * sx2 - sx * sfx) / (n * sx2 - sx ** 2)
         a1 = (n * sfx - sf * sx) / (n * sx2 - sx ** 2)
         return a0, a1
@@ -69,6 +69,18 @@ class InterpolacionAjuste:
         for i in range(len(pol)):
             suma = suma + pol[i] * (x ** i)
         return suma
+
+    @classmethod
+    def evaluar_polinomio_sympy(cls, pol, valor_reemplazo):
+        """
+        Evaluate the symbolic polynomial at a specific point
+        :param pol: polynomial
+        :param valor_reemplazo: specific point
+        :return: value of y at the specific point
+        """
+        x = sp.symbols('x')
+        y = pol.subs(x, valor_reemplazo)
+        return y
 
     @classmethod
     def graficar_mod_no_lineales(cls, x_d, y_d):
