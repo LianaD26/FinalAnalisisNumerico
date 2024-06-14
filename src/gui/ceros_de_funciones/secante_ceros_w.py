@@ -1,0 +1,2 @@
+class ISecante:
+    pass
