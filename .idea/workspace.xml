@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="Bisection(interface and controller)">
+    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="FalsaPos(interface and controller)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ceros_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ceros_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ceros_de_funciones/biseccion_ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_de_funciones/biseccion_ceros_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ceros_de_funciones/falsapos_ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_de_funciones/falsapos_ceros_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/taylor_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/taylor_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ceros_de_funciones/newton_ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_de_funciones/newton_ceros_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ceros_de_funciones/secante_ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_de_funciones/secante_ceros_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/ceros.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ceros.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718363016511</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="FalsaPos(interface and controller)">
+      <option name="closed" value="true" />
+      <created>1718364142012</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718364142012</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -146,6 +154,7 @@
     <MESSAGE value="Gauss Seide(interface and controller)" />
     <MESSAGE value="Eliminación gaussiana(interface and controller)" />
     <MESSAGE value="Bisection(interface and controller)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bisection(interface and controller)" />
+    <MESSAGE value="FalsaPos(interface and controller)" />
+    <option name="LAST_COMMIT_MESSAGE" value="FalsaPos(interface and controller)" />
   </component>
 </project>

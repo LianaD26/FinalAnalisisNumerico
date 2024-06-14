@@ -47,7 +47,7 @@ class Ceros:
             i += 1
 
     @classmethod
-    def newton(cls, f, x0, tol, i=0):
+    def newton(cls, f, x0, tol, x, i=0):
         """
         Note: This method receives a symbolic function(sympy)
         :param f: function
@@ -56,7 +56,6 @@ class Ceros:
         :param i: iterations
         :return: root, iterations
         """
-        x = sp.Symbol("x")
         df = sp.diff(f, x)  # primera derivada
         newT = x - f / df
         newT = sp.lambdify(x, newT)
@@ -66,6 +65,9 @@ class Ceros:
             x0 = x1
             x1 = newT(x0)
             i += 1
+            if abs(x1 - x0) < tol:
+                break
+
         return x1, i
 
     @classmethod
