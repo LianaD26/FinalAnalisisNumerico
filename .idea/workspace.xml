@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="Newton y Secante(interface and controller)">
+    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="Interpolacion y Ajuste(interface and controller)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/interpolacion_ajuste_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/interpolacion_ajuste_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ED_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ED_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/main_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/main_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/interpolacion_ajuste/lagrange_interp_ajuste_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/interpolacion_ajuste/lagrange_interp_ajuste_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/interpolacion_ajuste/min_cuadrados_interp_ajuste_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/interpolacion_ajuste/min_cuadrados_interp_ajuste_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/interpolacion_ajuste/pol_simple_interp_ajuste_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/interpolacion_ajuste/pol_simple_interp_ajuste_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/interpolacion_ajuste_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/interpolacion_ajuste_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/interpolacion_ajuste.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/interpolacion_ajuste.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ec_diferenciales/euler_ED_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ec_diferenciales/euler_ED_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ec_diferenciales/runge_kutta4_ED_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ec_diferenciales/runge_kutta4_ED_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ec_diferenciales_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ec_diferenciales_w.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718366073027</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Interpolacion y Ajuste(interface and controller)">
+      <option name="closed" value="true" />
+      <created>1718369455290</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718369455290</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,6 +173,7 @@
     <MESSAGE value="Bisection(interface and controller)" />
     <MESSAGE value="FalsaPos(interface and controller)" />
     <MESSAGE value="Newton y Secante(interface and controller)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Newton y Secante(interface and controller)" />
+    <MESSAGE value="Interpolacion y Ajuste(interface and controller)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interpolacion y Ajuste(interface and controller)" />
   </component>
 </project>

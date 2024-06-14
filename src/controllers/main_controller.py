@@ -2,7 +2,7 @@ from ..gui.taylor_w import ITaylor
 from ..gui.ceros_w import ICeros
 from ..gui.sist_ec_lineales_w import IEcLineales
 from ..gui.interpolacion_ajuste_w import IAjuste
-from ..gui.ec_diferenciales_w import ecdif_window
+from ..gui.ec_diferenciales_w import IEcDiferenciales
 
 
 def main_controller(opcion: str):
@@ -16,5 +16,5 @@ def main_controller(opcion: str):
     elif opcion == "Interpolacion y ajuste":
         w_ajuste = IAjuste()
     elif opcion == "Sistema Ec.Diferenciales":
-        ecdif_window()
+        w_ec_dif = IEcDiferenciales()
 
