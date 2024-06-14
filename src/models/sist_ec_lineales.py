@@ -70,12 +70,10 @@ class EcLineales:
         if radio < 1:
             x1 = np.dot(Tg, x0) + Cg
             i += 1
-            error = max(abs(x1-x0))
             while max(np.abs(x1 - x0)) > tol:
                 x0 = x1
                 x1 = np.dot(Tg, x0) + Cg
                 i += 1
-                error = max(abs(x1-x0))
-            return x1, radio, i, error
+            return x1, radio, i
         else:
             print("El sistema iterativo no converge a la solución única del sistema")

@@ -1,0 +1,2 @@
+class IPivoteo:
+    pass

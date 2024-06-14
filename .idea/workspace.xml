@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="models">
-      <change afterPath="$PROJECT_DIR$/src/controllers/main_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="Taylor(interface and controller)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/taylor_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/taylor_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ec_diferenciales_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ec_diferenciales_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/interpolacion_ajuste_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/interpolacion_ajuste_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/main_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/main_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/main_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/sist_ec_lineales_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/sist_ec_lineales_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/sist_ec_lineales_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/sist_ec_lineales_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/sist_ecuaciones_lineales/directos/eliminacion_SEL_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/sist_ecuaciones_lineales/directos/eliminacion_SEL_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/sist_ecuaciones_lineales/directos/pivoteo_SEL_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/sist_ecuaciones_lineales/directos/pivoteo_SEL_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/sist_ecuaciones_lineales/iterativos/gauss_seidel_matrix_SEL_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/sist_ecuaciones_lineales/iterativos/gauss_seidel_matrix_SEL_w.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/taylor_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/taylor_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/sist_ec_lineales.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/sist_ec_lineales.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,12 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718239906608</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Taylor(interface and controller)">
+      <option name="closed" value="true" />
+      <created>1718337396182</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718337396183</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project structure" />
     <MESSAGE value="models" />
-    <option name="LAST_COMMIT_MESSAGE" value="models" />
+    <MESSAGE value="Taylor(interface and controller)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Taylor(interface and controller)" />
   </component>
 </project>

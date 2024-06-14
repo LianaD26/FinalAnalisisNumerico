@@ -11,7 +11,7 @@ class ITaylor(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.title("Calculadora de Polinomio de Taylor")
+        self.title("Polinomio de Taylor")
 
         self.label_funcion = tk.Label(self, text="Función:")
         self.label_funcion.grid(row=0, column=0, padx=10, pady=10)
