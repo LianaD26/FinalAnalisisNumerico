@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="Eliminación gaussiana(interface and controller)">
+    <list default="true" id="2ddfbf53-edc7-476e-9d19-e597834e61e4" name="Changes" comment="Bisection(interface and controller)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ceros_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ceros_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/main_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/main_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/ceros_de_funciones/biseccion_ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_de_funciones/biseccion_ceros_w.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/ceros_de_funciones/falsapos_ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_de_funciones/falsapos_ceros_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ceros_de_funciones/newton_ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_de_funciones/newton_ceros_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ceros_de_funciones/secante_ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_de_funciones/secante_ceros_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ceros_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ceros_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/taylor_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/taylor_w.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718347360470</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Bisection(interface and controller)">
+      <option name="closed" value="true" />
+      <created>1718363016511</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718363016511</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,6 +145,7 @@
     <MESSAGE value="Taylor(interface and controller)" />
     <MESSAGE value="Gauss Seide(interface and controller)" />
     <MESSAGE value="Eliminación gaussiana(interface and controller)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminación gaussiana(interface and controller)" />
+    <MESSAGE value="Bisection(interface and controller)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bisection(interface and controller)" />
   </component>
 </project>

@@ -4,7 +4,7 @@ from tkinter import messagebox
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from sympy import symbols, sympify, lambdify
+from sympy import symbols, sympify, lambdify, sin, cos, tan, pi, E
 from ...controllers.ceros_controller import CerosController
 
 
@@ -59,8 +59,8 @@ class IBiseccion:
                 return
 
             x = symbols('x')
-            f_sym = sympify(func_str)
-            f = lambdify(x, f_sym)
+            f_sym = sympify(func_str, locals={'sin': sin, 'cos': cos, 'tan': tan, 'pi': pi, 'E': E})
+            f = lambdify(x, f_sym, 'numpy')
 
             root, iterations = CerosController.biseccion_controller(a, b, tol, f)
 

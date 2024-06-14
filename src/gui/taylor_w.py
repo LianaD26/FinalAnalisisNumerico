@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 import sympy as sp
+from sympy import sin, cos, tan, pi, E
 from ..controllers.taylor_controller import TaylorController
 import matplotlib.pyplot as plt
 import numpy as np
@@ -60,7 +61,7 @@ class ITaylor(tk.Tk):
         cota_opc = self.entry_cota_opc.get()
 
         try:
-            funcion_ = sp.sympify(funcion_str)
+            funcion_ = sp.sympify(funcion_str, locals={'sin': sin, 'cos': cos, 'tan': tan, 'pi': pi, 'E': E})
             grado_ = int(grado)
             x0_ = float(x0)  # Convierte usando SymPy
         except Exception as e:
