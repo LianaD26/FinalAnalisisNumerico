@@ -22,20 +22,22 @@ class SerieTaylor:
         return P
 
     @classmethod
-    def cota(cls, f, x0, x, n):
+    def cota(cls, f, x0, x_, n):
+        x = sp.symbols('x')
         """
         Calculates the maximum absolute value of the (n+1)th derivative in the interval [m, M]
         :param f: The function to be approximated(symbolic)
         :param x0: surrounding point which constructs the polynomial
-        :param x: The point at which the truncation error bound is evaluated
+        :param x_: The point at which the truncation error bound is evaluated
         :param n: polynomial degree
         :return:
         """
-        m = min(x0, x)
-        M = max(x0, x)
+        m = min(x0, x_)
+        M = max(x0, x_)
         u = np.linspace(m, M, 500)
         df = sp.diff(f, x, n+1)
         df = sp.lambdify(x, df)
         Mc = np.max(np.abs(df(u)))
 
-        return Mc*np.abs((x-x0)**(n+1)/factorial(n+1))
+        return Mc*np.abs((x_-x0)**(n+1)/factorial(n+1))
+
