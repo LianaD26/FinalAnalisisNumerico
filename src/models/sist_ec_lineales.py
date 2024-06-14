@@ -12,16 +12,16 @@ class EcLineales:
         :return: vector of xi values
         """
         n = len(b)
-        x = np.zeros(n)
+        x = [0] * n
 
-        for k in range(0, n - 1):
+        for k in range(n - 1):
             for i in range(k + 1, n):
-                lam = A[i, k] / (A[k, k])  # lambda factor
-                A[i, k:n] = A[i, k:n] - lam * A[k, k:n]  # update row
-                b[i] = b[i] - lam * b[k]
+                lam = A[i][k] / A[k][k]  # lambda factor
+                A[i][k:n] = [A[i][j] - lam * A[k][j] for j in range(k, n)]
+                b[i] -= lam * b[k]
 
         for k in range(n - 1, -1, -1):
-            x[k] = (b[k] - np.dot(A[k, k + 1:n], x[k + 1:n])) / (A[k, k])
+            x[k] = (b[k] - sum(A[k][j] * x[j] for j in range(k + 1, n))) / A[k][k]
 
         return x
 
@@ -30,24 +30,32 @@ class EcLineales:
         """
         This method uses pivoting to avoid zero or very small diagonal values, to ensure that
         the main diagonal element (pivot) is the maximum in its column
-        :param A:
-        :param b:
-        :return:
+        :param A: coefficients
+        :param b: matrix of b values
+        :return: vector of xi values
         """
         n = len(b)
-        for i in range(n):
-            max_fila = np.argmax(np.abs(A[i:n, i])) + i
-            if A[max_fila, i] == 0:
-                raise ValueError("El sistema no tiene solución única.")
-            A[[i, max_fila]] = A[[max_fila, i]]
-            b[[i, max_fila]] = b[[max_fila, i]]
-            for j in range(i + 1, n):
-                factor = A[j, i] / A[i, i]
-                A[j, i:] -= factor * A[i, i:]
-                b[j] -= factor * b[i]
-        x = np.zeros(n)
-        for i in range(n - 1, -1, -1):
-            x[i] = (b[i] - np.dot(A[i, i + 1:], x[i + 1:])) / A[i, i]
+
+        for k in range(n - 1):
+            max_index = max(range(k, n), key=lambda i: abs(A[i][k]))
+
+            if A[max_index][k] == 0:
+                raise ValueError("El método no converge a la solución del sistema.")
+
+            if max_index != k:
+                A[k], A[max_index] = A[max_index], A[k]
+                b[k], b[max_index] = b[max_index], b[k]
+
+            for i in range(k + 1, n):
+                lam = A[i][k] / A[k][k]
+                for j in range(k, n):
+                    A[i][j] -= lam * A[k][j]
+                b[i] -= lam * b[k]
+
+        x = [0] * n
+        for k in range(n - 1, -1, -1):
+            x[k] = (b[k] - sum(A[k][j] * x[j] for j in range(k + 1, n))) / A[k][k]
+
         return x
 
     @classmethod

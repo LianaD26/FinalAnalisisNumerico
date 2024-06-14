@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from ....controllers.sist_ec_lineales_controller import EcLinealesController
 
+
 class IGaussS:
     def __init__(self):
         self.root = tk.Tk()
@@ -81,14 +82,14 @@ class IGaussS:
                 else:
                     A_i.append(float(coeficientes[coef]))
             A.append(A_i)
-        x1, radio, i = EcLinealesController.gauss_seidel_controller(A, b, tol)
+        x1, radio, it = EcLinealesController.gauss_seidel_controller(A, b, tol)
 
         for i, ecuacion in enumerate(self.coeficientes):
             resultado_label = tk.Label(ecuacion[-1].master, text=f"Resultado x{i + 1}: {x1[i]}")
             resultado_label.pack(side=tk.LEFT, padx=5)
-
-            radio_label = tk.Label(ecuacion[-1].master, text=f"Iteraciones: {i}")
-            radio_label.pack(side=tk.LEFT, padx=5)
+            if i == len(self.coeficientes)-1:
+                radio_label = tk.Label(ecuacion[-1].master, text=f"Iteraciones: {it}")
+                radio_label.pack(side=tk.LEFT, padx=5)
 
 
 
